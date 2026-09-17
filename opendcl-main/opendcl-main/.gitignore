@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.opendcl/
+.pi/
+.DS_Store
