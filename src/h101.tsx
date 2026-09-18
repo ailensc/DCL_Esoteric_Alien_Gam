@@ -351,7 +351,7 @@ const UI = () => (
         uiTransform={{
           positionType: 'absolute',
           position: { top: '10%', left: '27%' },
-          width: 640,
+          width: 660,
           flexDirection: 'column',
           alignItems: 'center',
           padding: 20
@@ -368,10 +368,18 @@ const UI = () => (
           }}
         />
         <UiEntity
-          uiTransform={{ width: '100%', margin: { top: 6 } }}
+          uiTransform={{ width: '100%', height: 28, alignItems: 'center', justifyContent: 'center', margin: { top: 6 } }}
           uiText={{
-            value:
-              'Hello, interdimensional being\u2014it\u2019s great to meet you! Now, head to my Temple to unlock a level, then return to me to receive your esoteric advice.',
+            value: 'Hello, interdimensional being\u2014it\u2019s great to meet you!',
+            fontSize: 18,
+            color: Color4.create(1, 0.9, 0.95, 1),
+            textAlign: 'middle-center'
+          }}
+        />
+        <UiEntity
+          uiTransform={{ width: '100%', height: 56, alignItems: 'center', justifyContent: 'center', margin: { top: 4 } }}
+          uiText={{
+            value: 'Now, head to my Temple to unlock a level, then return to me to receive your esoteric advice.',
             fontSize: 18,
             color: Color4.create(1, 0.9, 0.95, 1),
             textAlign: 'middle-center'
